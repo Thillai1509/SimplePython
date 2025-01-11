@@ -1,4 +1,5 @@
 import os
+import requests
 
 def main():
     # Access the secret keys
