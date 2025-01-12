@@ -5,9 +5,11 @@ def main():
     # Access the secret keys
     secret_key_1 = os.getenv("SECRET_KEY_1")
     secret_key_2 = os.getenv("SECRET_KEY_2")
-
-    print(f"Secret Key 1: {secret_key_1}")
-    print(f"Secret Key 2: {secret_key_2}")
+    if secret_key_1:
+        print(f"Secret Key 1: {secret_key_1}")
+        print(f"Secret Key 2: {secret_key_2}")
+    else:
+        print("secret key not found")
 
     # Use the keys as needed
     print("Hi, Before Sending")
