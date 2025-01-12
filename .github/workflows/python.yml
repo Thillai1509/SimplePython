@@ -26,6 +26,6 @@ jobs:
 
       - name: Run main.py
         env:
-          SECRET_KEY_1: ${{ secrets.SECRET_KEY_1 }}
-          SECRET_KEY_2: ${{ secrets.SECRET_KEY_2 }}
+          SECRET_KEY_1: ${{ secrets.MY_SECRET_KEY1 }}
+          SECRET_KEY_2: ${{ secrets.MY_SECRET_KEY2 }}
         run: python main.py
